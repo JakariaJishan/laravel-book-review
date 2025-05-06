@@ -15,18 +15,18 @@ php artisan config:cache
 echo "Caching routes..."
 php artisan route:cache
 
-echo "Wiping database..."
-php artisan db:wipe --force
+# echo "Wiping database..."
+# php artisan db:wipe --force
 
-echo "Creating session & cache table..."
-php artisan make:session-table
-php artisan make:cache-table
+# echo "Creating session & cache table..."
+# php artisan make:session-table
+# php artisan make:cache-table
 
-echo "Running migrations..."
-php artisan migrate --force
+# echo "Running migrations..."
+# php artisan migrate --force
 
-echo "Seeding database..."
-php artisan db:seed --force
+# echo "Seeding database..."
+# php artisan db:seed --force
 
 echo "Starting Laravel server..."
 php artisan serve --host=0.0.0.0 --port=8000
