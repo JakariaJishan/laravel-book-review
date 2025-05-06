@@ -18,8 +18,11 @@ php artisan route:cache
 echo "Wiping database..."
 php artisan db:wipe --force
 
+echo "Creating session & cache table..."
+php artisan make:session-table --force
+php artisan make:cache-table --force
+
 echo "Running migrations..."
-php artisan session:table --force
 php artisan migrate --force
 
 echo "Seeding database..."
